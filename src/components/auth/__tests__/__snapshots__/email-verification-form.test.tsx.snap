@@ -1,0 +1,116 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`EmailVerificationForm > should match the snapshot 1`] = `
+<DocumentFragment>
+  <form
+    action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+    class="space-y-8"
+    role="form"
+  >
+    <div
+      class="space-y-2"
+    >
+      <label
+        class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        for=":r0:-form-item"
+      >
+        Email Verification Code
+      </label>
+      <noscript />
+      <div
+        class="flex items-center gap-2 has-[:disabled]:opacity-50"
+        data-input-otp-container="true"
+        style="position: relative; cursor: text; user-select: none; pointer-events: none; --root-height: 0px;"
+      >
+        <div
+          class="flex items-center"
+        >
+          <div
+            class="relative flex h-10 w-10 items-center justify-center border-y border-r border-input text-sm transition-all first:rounded-l-md first:border-l last:rounded-r-md"
+          />
+        </div>
+        <div
+          class="flex items-center"
+        >
+          <div
+            class="relative flex h-10 w-10 items-center justify-center border-y border-r border-input text-sm transition-all first:rounded-l-md first:border-l last:rounded-r-md"
+          />
+        </div>
+        <div
+          class="flex items-center"
+        >
+          <div
+            class="relative flex h-10 w-10 items-center justify-center border-y border-r border-input text-sm transition-all first:rounded-l-md first:border-l last:rounded-r-md"
+          />
+        </div>
+        <div
+          class="flex items-center"
+        >
+          <div
+            class="relative flex h-10 w-10 items-center justify-center border-y border-r border-input text-sm transition-all first:rounded-l-md first:border-l last:rounded-r-md"
+          />
+        </div>
+        <div
+          class="flex items-center"
+        >
+          <div
+            class="relative flex h-10 w-10 items-center justify-center border-y border-r border-input text-sm transition-all first:rounded-l-md first:border-l last:rounded-r-md"
+          />
+        </div>
+        <div
+          class="flex items-center"
+        >
+          <div
+            class="relative flex h-10 w-10 items-center justify-center border-y border-r border-input text-sm transition-all first:rounded-l-md first:border-l last:rounded-r-md"
+          />
+        </div>
+        <div
+          style="position: absolute; inset: 0; pointer-events: none;"
+        >
+          <input
+            aria-describedby=":r0:-form-item-description"
+            aria-invalid="false"
+            autocomplete="one-time-code"
+            class="disabled:cursor-not-allowed"
+            data-input-otp="true"
+            id=":r0:-form-item"
+            inputmode="numeric"
+            maxlength="6"
+            name="evc"
+            pattern="^[a-zA-Z0-9]+$"
+            style="position: absolute; inset: 0; width: 100%; height: 100%; display: flex; text-align: left; opacity: 1; color: transparent; pointer-events: all; background: transparent; caret-color: transparent; border: 0px solid transparent; outline: 0 solid transparent; box-shadow: none; line-height: 1; letter-spacing: -.5em; font-family: monospace; font-variant-numeric: tabular-nums;"
+            value=""
+          />
+        </div>
+      </div>
+      <p
+        class="text-sm text-muted-foreground"
+        id=":r0:-form-item-description"
+      >
+        Please enter the code sent to your email:
+        <br />
+        <span
+          class="underline"
+        />
+      </p>
+    </div>
+    <div
+      class="space-x-3"
+    >
+      <button
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-active disabled:hover:bg-primary h-10 px-4 py-2 2xl:h-11"
+        type="submit"
+      >
+        Verify
+      </button>
+      <button
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 2xl:h-11"
+        disabled=""
+        type="button"
+      >
+        Resend (60s)
+      </button>
+    </div>
+  </form>
+</DocumentFragment>
+`;

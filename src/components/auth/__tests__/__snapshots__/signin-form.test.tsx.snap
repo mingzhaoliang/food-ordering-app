@@ -1,0 +1,64 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SigninForm > should match the snapshot 1`] = `
+<DocumentFragment>
+  <form
+    action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+    class="font-lato flex flex-col w-full gap-1"
+    role="form"
+  >
+    <div
+      class="space-y-2"
+    >
+      <div
+        aria-describedby=":r0:-form-item-description"
+        aria-invalid="false"
+        class="relative flex items-center"
+        id=":r0:-form-item"
+      >
+        <div
+          class="flex-1"
+        />
+      </div>
+      <p
+        class="font-medium text-destructive text-xs pl-1"
+        data-testid="form-message-email"
+        id=":r0:-form-item-message"
+      >
+        <span
+          class="inline-block h-3"
+        />
+      </p>
+    </div>
+    <div
+      class="space-y-2"
+    >
+      <div
+        aria-describedby=":r1:-form-item-description"
+        aria-invalid="false"
+        class="relative flex items-center"
+        id=":r1:-form-item"
+      >
+        <div
+          class="flex-1"
+        />
+      </div>
+      <p
+        class="font-medium text-destructive text-xs pl-1"
+        data-testid="form-message-password"
+        id=":r1:-form-item-message"
+      >
+        <span
+          class="inline-block h-3"
+        />
+      </p>
+    </div>
+    <button
+      class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-active disabled:hover:bg-primary h-10 px-4 py-2 2xl:h-11 mt-2"
+      type="submit"
+    >
+      Sign in
+    </button>
+  </form>
+</DocumentFragment>
+`;

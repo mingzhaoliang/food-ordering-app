@@ -1,5 +1,5 @@
 import { cloudinaryUrl } from "@/lib/utils/cloudinary";
-import { Model, model, models, Schema, Types } from "mongoose";
+import { Model, Schema, Types } from "mongoose";
 
 interface ImageDoc {
   _id: Types.ObjectId;
@@ -39,6 +39,4 @@ const imageSchema = new Schema<ImageDoc, ImageModel, ImageVirtuals>(
   }
 );
 
-const Image = (models.Image as ImageModel) || model("Image", imageSchema);
-
-export { Image, imageSchema, type ImageDoc, type ImageModel };
+export { imageSchema, type ImageDoc, type ImageModel };

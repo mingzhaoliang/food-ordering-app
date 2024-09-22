@@ -1,0 +1,1404 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ManageRestaurantForm > should match the snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <form
+        action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+      >
+        <div>
+          <h4
+            class="heading-4 mb-2 lg:mb-4"
+          >
+            Details
+          </h4>
+          <div
+            class="space-y-2"
+          >
+            <div
+              aria-describedby=":r0:-form-item-description"
+              aria-invalid="false"
+              class="relative flex items-center"
+              id=":r0:-form-item"
+            >
+              <div
+                class="flex-1"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-name"
+              id=":r0:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+          <div
+            class="grid sm:grid-cols-2 gap-x-4"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                aria-describedby=":r1:-form-item-description"
+                aria-invalid="false"
+                class="relative flex items-center"
+                id=":r1:-form-item"
+              >
+                <div
+                  class="flex-1"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-contactNumber"
+                id=":r1:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <div
+                aria-describedby=":r2:-form-item-description"
+                aria-invalid="false"
+                class="relative flex items-center"
+                id=":r2:-form-item"
+              >
+                <div
+                  class="flex-1"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-email"
+                id=":r2:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+          </div>
+          <div
+            class="grid sm:grid-cols-2 2xl:grid-cols-4 gap-x-4"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                class="flex w-full flex-col rounded-md bg-popover text-popover-foreground overflow-visible h-fit"
+                cmdk-root=""
+                tabindex="-1"
+              >
+                <label
+                  cmdk-label=""
+                  for=":r7:"
+                  id=":r6:"
+                  style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+                />
+                <input
+                  aria-autocomplete="list"
+                  aria-controls=":r5:"
+                  aria-describedby=":r3:-form-item-description"
+                  aria-expanded="true"
+                  aria-invalid="false"
+                  aria-labelledby=":r6:"
+                  autocomplete="off"
+                  autocorrect="off"
+                  class="flex h-10 w-full border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 rounded-full xl:p-5 xl:text-base"
+                  cmdk-input=""
+                  data-testid="street"
+                  id="street"
+                  name="street"
+                  placeholder="Street"
+                  role="combobox"
+                  spellcheck="false"
+                  type="text"
+                  value="123 Fake St"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-street"
+                id=":r3:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <div
+                aria-describedby=":r8:-form-item-description"
+                aria-invalid="false"
+                class="relative flex items-center"
+                id=":r8:-form-item"
+              >
+                <div
+                  class="flex-1"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-city"
+                id=":r8:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <button
+                aria-autocomplete="none"
+                aria-controls="radix-:ra:"
+                aria-describedby=":r9:-form-item-description"
+                aria-expanded="false"
+                aria-invalid="false"
+                class="flex h-10 w-full items-center justify-between border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 rounded-full xl:p-5 xl:text-base"
+                data-state="closed"
+                data-testid="state"
+                dir="ltr"
+                id=":r9:-form-item"
+                role="combobox"
+                type="button"
+              >
+                <span
+                  style="pointer-events: none;"
+                >
+                  QLD
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+              <select
+                aria-hidden="true"
+                name="state"
+                style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+                tabindex="-1"
+              >
+                <option
+                  value="ACT"
+                >
+                  ACT
+                </option>
+                <option
+                  value="NSW"
+                >
+                  NSW
+                </option>
+                <option
+                  value="NT"
+                >
+                  NT
+                </option>
+                <option
+                  selected=""
+                  value="QLD"
+                >
+                  QLD
+                </option>
+                <option
+                  value="SA"
+                >
+                  SA
+                </option>
+                <option
+                  value="TAS"
+                >
+                  TAS
+                </option>
+                <option
+                  value="VIC"
+                >
+                  VIC
+                </option>
+                <option
+                  value="WA"
+                >
+                  WA
+                </option>
+              </select>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-state"
+                id=":r9:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <div
+                aria-describedby=":rb:-form-item-description"
+                aria-invalid="false"
+                class="relative flex items-center"
+                id=":rb:-form-item"
+              >
+                <div
+                  class="flex-1"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-postcode"
+                id=":rb:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="shrink-0 bg-border h-[1px] w-full mt-4 mb-8"
+          data-orientation="horizontal"
+          role="none"
+        />
+        <div>
+          <h4
+            class="heading-4 mb-2 lg:mb-4"
+          >
+            Delivery
+          </h4>
+          <div
+            class="grid sm:grid-cols-2 gap-x-4"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                aria-describedby=":rc:-form-item-description"
+                aria-invalid="false"
+                class="relative flex items-center"
+                id=":rc:-form-item"
+              >
+                <div
+                  class="flex-1"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-deliveryFee"
+                id=":rc:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <div
+                aria-describedby=":rd:-form-item-description"
+                aria-invalid="false"
+                class="relative flex items-center"
+                id=":rd:-form-item"
+              >
+                <div
+                  class="flex-1"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-freeDeliveryThreshold"
+                id=":rd:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <div
+                aria-describedby=":re:-form-item-description"
+                aria-invalid="false"
+                class="relative flex items-center"
+                id=":re:-form-item"
+              >
+                <div
+                  class="flex-1"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-estimatedDeliveryTime"
+                id=":re:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="shrink-0 bg-border h-[1px] w-full mt-4 mb-8"
+          data-orientation="horizontal"
+          role="none"
+        />
+        <div>
+          <h4
+            class="heading-4 mb-2 lg:mb-4"
+          >
+            Courses
+          </h4>
+          <div
+            class="space-y-2 grid sm:grid-cols-2 gap-x-8"
+          >
+            <div
+              class="relative grid grid-cols-[1fr_1fr_auto] gap-4"
+            >
+              <div
+                class="space-y-2"
+              >
+                <div
+                  aria-describedby=":rr:-form-item-description"
+                  aria-invalid="false"
+                  class="relative flex items-center"
+                  id=":rr:-form-item"
+                >
+                  <div
+                    class="flex-1"
+                  />
+                </div>
+                <p
+                  class="font-medium text-destructive text-xs pl-1"
+                  data-testid="form-message-courses.0.name"
+                  id=":rr:-form-item-message"
+                >
+                  <span
+                    class="inline-block h-3"
+                  />
+                </p>
+              </div>
+              <div
+                class="space-y-2"
+              >
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1 lg:text-base text-stone-500"
+                  for="courses.0.imageFile"
+                >
+                  Icon
+                  <a
+                    data-state="closed"
+                  >
+                    <svg
+                      class="lucide lucide-info text-fade inline-block ml-1 w-4 h-4"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                      />
+                      <path
+                        d="M12 16v-4"
+                      />
+                      <path
+                        d="M12 8h.01"
+                      />
+                    </svg>
+                  </a>
+                </label>
+                <div
+                  class="relative overflow-hidden flex-center cursor-pointer aspect-square rounded-3xl w-fit h-10 sm:h-12"
+                  role="presentation"
+                  tabindex="0"
+                >
+                  <img
+                    alt="Icon"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="(max-width: 640px) 25vw, 5vw"
+                    src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <input
+                  accept="image/jpeg,image/jpg,image/png,image/webp"
+                  aria-describedby=":rs:-form-item-description"
+                  aria-invalid="false"
+                  class="hidden"
+                  data-testid="courses.0.imageFile"
+                  id="courses.0.imageFile"
+                  multiple=""
+                  name="courses.0.imageFile"
+                  style="display: none;"
+                  tabindex="-1"
+                  type="file"
+                />
+                <p
+                  class="font-medium text-destructive text-xs"
+                  id=":rs:-form-item-message"
+                >
+                  <span
+                    class="inline-block h-3"
+                  />
+                </p>
+              </div>
+              <button
+                aria-controls="radix-:rt:"
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 w-9 sm:h-10 sm:w-10 2xl:h-11 2xl:w-11 self-center bg-stone-100 hover:bg-stone-200"
+                data-state="closed"
+                type="button"
+              >
+                <svg
+                  class="lucide lucide-x size-icon-1"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 6 6 18"
+                  />
+                  <path
+                    d="m6 6 12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 2xl:h-11"
+            type="button"
+          >
+            Add a new
+             
+            course
+          </button>
+        </div>
+        <div
+          class="shrink-0 bg-border h-[1px] w-full mt-4 mb-8"
+          data-orientation="horizontal"
+          role="none"
+        />
+        <div>
+          <h4
+            class="heading-4 mb-2 lg:mb-4"
+          >
+            Special Diets
+          </h4>
+          <div
+            class="space-y-2 grid sm:grid-cols-2 gap-x-8"
+          >
+            <div
+              class="relative grid grid-cols-[1fr_1fr_auto] gap-4"
+            >
+              <div
+                class="space-y-2"
+              >
+                <div
+                  aria-describedby=":r10:-form-item-description"
+                  aria-invalid="false"
+                  class="relative flex items-center"
+                  id=":r10:-form-item"
+                >
+                  <div
+                    class="flex-1"
+                  />
+                </div>
+                <p
+                  class="font-medium text-destructive text-xs pl-1"
+                  data-testid="form-message-specialDiets.0.name"
+                  id=":r10:-form-item-message"
+                >
+                  <span
+                    class="inline-block h-3"
+                  />
+                </p>
+              </div>
+              <div
+                class="space-y-2"
+              >
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1 lg:text-base text-stone-500"
+                  for="specialDiets.0.imageFile"
+                >
+                  Icon
+                  <a
+                    data-state="closed"
+                  >
+                    <svg
+                      class="lucide lucide-info text-fade inline-block ml-1 w-4 h-4"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                      />
+                      <path
+                        d="M12 16v-4"
+                      />
+                      <path
+                        d="M12 8h.01"
+                      />
+                    </svg>
+                  </a>
+                </label>
+                <div
+                  class="relative overflow-hidden flex-center cursor-pointer aspect-square rounded-3xl w-fit h-10 sm:h-12"
+                  role="presentation"
+                  tabindex="0"
+                >
+                  <img
+                    alt="Icon"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="(max-width: 640px) 25vw, 5vw"
+                    src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <input
+                  accept="image/jpeg,image/jpg,image/png,image/webp"
+                  aria-describedby=":r11:-form-item-description"
+                  aria-invalid="false"
+                  class="hidden"
+                  data-testid="specialDiets.0.imageFile"
+                  id="specialDiets.0.imageFile"
+                  multiple=""
+                  name="specialDiets.0.imageFile"
+                  style="display: none;"
+                  tabindex="-1"
+                  type="file"
+                />
+                <p
+                  class="font-medium text-destructive text-xs"
+                  id=":r11:-form-item-message"
+                >
+                  <span
+                    class="inline-block h-3"
+                  />
+                </p>
+              </div>
+              <button
+                aria-controls="radix-:r12:"
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 w-9 sm:h-10 sm:w-10 2xl:h-11 2xl:w-11 self-center bg-stone-100 hover:bg-stone-200"
+                data-state="closed"
+                type="button"
+              >
+                <svg
+                  class="lucide lucide-x size-icon-1"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 6 6 18"
+                  />
+                  <path
+                    d="m6 6 12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 2xl:h-11"
+            type="button"
+          >
+            Add a new
+             
+            special diet
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>,
+  "container": <div>
+    <form
+      action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+    >
+      <div>
+        <h4
+          class="heading-4 mb-2 lg:mb-4"
+        >
+          Details
+        </h4>
+        <div
+          class="space-y-2"
+        >
+          <div
+            aria-describedby=":r0:-form-item-description"
+            aria-invalid="false"
+            class="relative flex items-center"
+            id=":r0:-form-item"
+          >
+            <div
+              class="flex-1"
+            />
+          </div>
+          <p
+            class="font-medium text-destructive text-xs pl-1"
+            data-testid="form-message-name"
+            id=":r0:-form-item-message"
+          >
+            <span
+              class="inline-block h-3"
+            />
+          </p>
+        </div>
+        <div
+          class="grid sm:grid-cols-2 gap-x-4"
+        >
+          <div
+            class="space-y-2"
+          >
+            <div
+              aria-describedby=":r1:-form-item-description"
+              aria-invalid="false"
+              class="relative flex items-center"
+              id=":r1:-form-item"
+            >
+              <div
+                class="flex-1"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-contactNumber"
+              id=":r1:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <div
+              aria-describedby=":r2:-form-item-description"
+              aria-invalid="false"
+              class="relative flex items-center"
+              id=":r2:-form-item"
+            >
+              <div
+                class="flex-1"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-email"
+              id=":r2:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+        </div>
+        <div
+          class="grid sm:grid-cols-2 2xl:grid-cols-4 gap-x-4"
+        >
+          <div
+            class="space-y-2"
+          >
+            <div
+              class="flex w-full flex-col rounded-md bg-popover text-popover-foreground overflow-visible h-fit"
+              cmdk-root=""
+              tabindex="-1"
+            >
+              <label
+                cmdk-label=""
+                for=":r7:"
+                id=":r6:"
+                style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+              />
+              <input
+                aria-autocomplete="list"
+                aria-controls=":r5:"
+                aria-describedby=":r3:-form-item-description"
+                aria-expanded="true"
+                aria-invalid="false"
+                aria-labelledby=":r6:"
+                autocomplete="off"
+                autocorrect="off"
+                class="flex h-10 w-full border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 rounded-full xl:p-5 xl:text-base"
+                cmdk-input=""
+                data-testid="street"
+                id="street"
+                name="street"
+                placeholder="Street"
+                role="combobox"
+                spellcheck="false"
+                type="text"
+                value="123 Fake St"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-street"
+              id=":r3:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <div
+              aria-describedby=":r8:-form-item-description"
+              aria-invalid="false"
+              class="relative flex items-center"
+              id=":r8:-form-item"
+            >
+              <div
+                class="flex-1"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-city"
+              id=":r8:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <button
+              aria-autocomplete="none"
+              aria-controls="radix-:ra:"
+              aria-describedby=":r9:-form-item-description"
+              aria-expanded="false"
+              aria-invalid="false"
+              class="flex h-10 w-full items-center justify-between border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 rounded-full xl:p-5 xl:text-base"
+              data-state="closed"
+              data-testid="state"
+              dir="ltr"
+              id=":r9:-form-item"
+              role="combobox"
+              type="button"
+            >
+              <span
+                style="pointer-events: none;"
+              >
+                QLD
+              </span>
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m6 9 6 6 6-6"
+                />
+              </svg>
+            </button>
+            <select
+              aria-hidden="true"
+              name="state"
+              style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+              tabindex="-1"
+            >
+              <option
+                value="ACT"
+              >
+                ACT
+              </option>
+              <option
+                value="NSW"
+              >
+                NSW
+              </option>
+              <option
+                value="NT"
+              >
+                NT
+              </option>
+              <option
+                selected=""
+                value="QLD"
+              >
+                QLD
+              </option>
+              <option
+                value="SA"
+              >
+                SA
+              </option>
+              <option
+                value="TAS"
+              >
+                TAS
+              </option>
+              <option
+                value="VIC"
+              >
+                VIC
+              </option>
+              <option
+                value="WA"
+              >
+                WA
+              </option>
+            </select>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-state"
+              id=":r9:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <div
+              aria-describedby=":rb:-form-item-description"
+              aria-invalid="false"
+              class="relative flex items-center"
+              id=":rb:-form-item"
+            >
+              <div
+                class="flex-1"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-postcode"
+              id=":rb:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="shrink-0 bg-border h-[1px] w-full mt-4 mb-8"
+        data-orientation="horizontal"
+        role="none"
+      />
+      <div>
+        <h4
+          class="heading-4 mb-2 lg:mb-4"
+        >
+          Delivery
+        </h4>
+        <div
+          class="grid sm:grid-cols-2 gap-x-4"
+        >
+          <div
+            class="space-y-2"
+          >
+            <div
+              aria-describedby=":rc:-form-item-description"
+              aria-invalid="false"
+              class="relative flex items-center"
+              id=":rc:-form-item"
+            >
+              <div
+                class="flex-1"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-deliveryFee"
+              id=":rc:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <div
+              aria-describedby=":rd:-form-item-description"
+              aria-invalid="false"
+              class="relative flex items-center"
+              id=":rd:-form-item"
+            >
+              <div
+                class="flex-1"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-freeDeliveryThreshold"
+              id=":rd:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <div
+              aria-describedby=":re:-form-item-description"
+              aria-invalid="false"
+              class="relative flex items-center"
+              id=":re:-form-item"
+            >
+              <div
+                class="flex-1"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-estimatedDeliveryTime"
+              id=":re:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="shrink-0 bg-border h-[1px] w-full mt-4 mb-8"
+        data-orientation="horizontal"
+        role="none"
+      />
+      <div>
+        <h4
+          class="heading-4 mb-2 lg:mb-4"
+        >
+          Courses
+        </h4>
+        <div
+          class="space-y-2 grid sm:grid-cols-2 gap-x-8"
+        >
+          <div
+            class="relative grid grid-cols-[1fr_1fr_auto] gap-4"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                aria-describedby=":rr:-form-item-description"
+                aria-invalid="false"
+                class="relative flex items-center"
+                id=":rr:-form-item"
+              >
+                <div
+                  class="flex-1"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-courses.0.name"
+                id=":rr:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1 lg:text-base text-stone-500"
+                for="courses.0.imageFile"
+              >
+                Icon
+                <a
+                  data-state="closed"
+                >
+                  <svg
+                    class="lucide lucide-info text-fade inline-block ml-1 w-4 h-4"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                    />
+                    <path
+                      d="M12 16v-4"
+                    />
+                    <path
+                      d="M12 8h.01"
+                    />
+                  </svg>
+                </a>
+              </label>
+              <div
+                class="relative overflow-hidden flex-center cursor-pointer aspect-square rounded-3xl w-fit h-10 sm:h-12"
+                role="presentation"
+                tabindex="0"
+              >
+                <img
+                  alt="Icon"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  sizes="(max-width: 640px) 25vw, 5vw"
+                  src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=3840&q=75"
+                  srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fcourse1&w=3840&q=75 3840w"
+                  style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                />
+              </div>
+              <input
+                accept="image/jpeg,image/jpg,image/png,image/webp"
+                aria-describedby=":rs:-form-item-description"
+                aria-invalid="false"
+                class="hidden"
+                data-testid="courses.0.imageFile"
+                id="courses.0.imageFile"
+                multiple=""
+                name="courses.0.imageFile"
+                style="display: none;"
+                tabindex="-1"
+                type="file"
+              />
+              <p
+                class="font-medium text-destructive text-xs"
+                id=":rs:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <button
+              aria-controls="radix-:rt:"
+              aria-expanded="false"
+              aria-haspopup="dialog"
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 w-9 sm:h-10 sm:w-10 2xl:h-11 2xl:w-11 self-center bg-stone-100 hover:bg-stone-200"
+              data-state="closed"
+              type="button"
+            >
+              <svg
+                class="lucide lucide-x size-icon-1"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 6 6 18"
+                />
+                <path
+                  d="m6 6 12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 2xl:h-11"
+          type="button"
+        >
+          Add a new
+           
+          course
+        </button>
+      </div>
+      <div
+        class="shrink-0 bg-border h-[1px] w-full mt-4 mb-8"
+        data-orientation="horizontal"
+        role="none"
+      />
+      <div>
+        <h4
+          class="heading-4 mb-2 lg:mb-4"
+        >
+          Special Diets
+        </h4>
+        <div
+          class="space-y-2 grid sm:grid-cols-2 gap-x-8"
+        >
+          <div
+            class="relative grid grid-cols-[1fr_1fr_auto] gap-4"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                aria-describedby=":r10:-form-item-description"
+                aria-invalid="false"
+                class="relative flex items-center"
+                id=":r10:-form-item"
+              >
+                <div
+                  class="flex-1"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-specialDiets.0.name"
+                id=":r10:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 pl-1 lg:text-base text-stone-500"
+                for="specialDiets.0.imageFile"
+              >
+                Icon
+                <a
+                  data-state="closed"
+                >
+                  <svg
+                    class="lucide lucide-info text-fade inline-block ml-1 w-4 h-4"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                    />
+                    <path
+                      d="M12 16v-4"
+                    />
+                    <path
+                      d="M12 8h.01"
+                    />
+                  </svg>
+                </a>
+              </label>
+              <div
+                class="relative overflow-hidden flex-center cursor-pointer aspect-square rounded-3xl w-fit h-10 sm:h-12"
+                role="presentation"
+                tabindex="0"
+              >
+                <img
+                  alt="Icon"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  sizes="(max-width: 640px) 25vw, 5vw"
+                  src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=3840&q=75"
+                  srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fundefined%2Fimage%2Fupload%2Fvegetarian&w=3840&q=75 3840w"
+                  style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                />
+              </div>
+              <input
+                accept="image/jpeg,image/jpg,image/png,image/webp"
+                aria-describedby=":r11:-form-item-description"
+                aria-invalid="false"
+                class="hidden"
+                data-testid="specialDiets.0.imageFile"
+                id="specialDiets.0.imageFile"
+                multiple=""
+                name="specialDiets.0.imageFile"
+                style="display: none;"
+                tabindex="-1"
+                type="file"
+              />
+              <p
+                class="font-medium text-destructive text-xs"
+                id=":r11:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <button
+              aria-controls="radix-:r12:"
+              aria-expanded="false"
+              aria-haspopup="dialog"
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 w-9 sm:h-10 sm:w-10 2xl:h-11 2xl:w-11 self-center bg-stone-100 hover:bg-stone-200"
+              data-state="closed"
+              type="button"
+            >
+              <svg
+                class="lucide lucide-x size-icon-1"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 6 6 18"
+                />
+                <path
+                  d="m6 6 12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 2xl:h-11"
+          type="button"
+        >
+          Add a new
+           
+          special diet
+        </button>
+      </div>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

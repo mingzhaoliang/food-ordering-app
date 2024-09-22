@@ -1,9 +1,10 @@
 import { Toaster } from "@/components/ui/shadcn/toaster";
+import "maplibre-gl/dist/maplibre-gl.css";
 import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Cucina Felice",
+  title: "Food Ordering App",
   description: "Authentic Italian Food",
 };
 

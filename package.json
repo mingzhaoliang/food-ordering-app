@@ -13,6 +13,7 @@
     "@hookform/resolvers": "^3.9.0",
     "@lucia-auth/adapter-mongodb": "^1.0.3",
     "@radix-ui/react-alert-dialog": "^1.1.1",
+    "@radix-ui/react-checkbox": "^1.1.1",
     "@radix-ui/react-dialog": "^1.1.1-rc.1",
     "@radix-ui/react-dropdown-menu": "^2.1.1",
     "@radix-ui/react-hover-card": "^1.1.1",
@@ -28,6 +29,7 @@
     "cloudinary": "^2.5.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
+    "date-fns": "^4.1.0",
     "input-otp": "^1.2.4",
     "lucia": "^3.2.0",
     "lucide-react": "^0.445.0",
@@ -36,6 +38,7 @@
     "nodemailer": "^6.9.15",
     "oslo": "^1.2.1",
     "react": "19.0.0-rc-f994737d14-20240522",
+    "react-day-picker": "^8.10.1",
     "react-dom": "19.0.0-rc-f994737d14-20240522",
     "react-dropzone": "^14.2.3",
     "react-hook-form": "^7.53.0",
@@ -47,6 +50,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@savvywombat/tailwindcss-grid-areas": "^4.0.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",

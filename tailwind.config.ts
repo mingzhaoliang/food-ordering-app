@@ -82,8 +82,27 @@ const config: Config = {
       maxWidth: {
         ...sizing,
       },
+      gridTemplateAreas: {
+        card: ["thumbnail thumbnail", "title title", "description description", "price button"],
+        "card-vertical": ["thumbnail thumbnail thumbnail", "title price button"],
+        "card-horizontal": [
+          "thumbnail title price",
+          "thumbnail description description",
+          "thumbnail tags tags",
+          "thumbnail button button",
+        ],
+      },
+      gridTemplateColumns: {
+        "card-vertical": "auto min-content min-content",
+        "card-horizontal": "auto 1fr auto",
+      },
+      gridTemplateRows: {
+        card: "repeat(4, auto)",
+        "card-vertical": "minmax(0, 4fr) min-content",
+        "card-horizontal": "2fr 2fr 1fr 1fr",
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@savvywombat/tailwindcss-grid-areas")],
 };
 export default config;

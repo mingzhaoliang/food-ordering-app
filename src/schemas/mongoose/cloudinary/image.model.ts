@@ -1,8 +1,8 @@
 import { cloudinaryUrl } from "@/lib/utils/cloudinary";
-import { Model, Schema, Types } from "mongoose";
+import { Model, Schema } from "mongoose";
 
 interface ImageDoc {
-  _id: Types.ObjectId;
+  _id: string;
   publicId: string;
   type: "upload" | "authenticated" | "private";
   resourceType: "image" | "raw" | "video" | "auto";

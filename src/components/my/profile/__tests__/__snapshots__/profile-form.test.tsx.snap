@@ -1,0 +1,658 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProfileForm > should match the snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <form
+        action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+        class="max-lg:space-y-2 space-y-4"
+      >
+        <div
+          class="max-lg:space-y-2 space-y-4"
+        >
+          <h4
+            class="heading-4"
+          >
+            Basic information
+          </h4>
+          <div
+            class="grid max-sm:grid-cols-1 max-2xl:grid-cols-2 grid-cols-4 max-sm:gap-x-2 max-xl:gap-x-6 gap-x-8 gap-y-1"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                aria-describedby=":r0:-form-item-description"
+                aria-invalid="false"
+                class="relative flex items-center"
+                id=":r0:-form-item"
+              >
+                <div
+                  class="flex-1"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-firstName"
+                id=":r0:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <div
+                aria-describedby=":r1:-form-item-description"
+                aria-invalid="false"
+                class="relative flex items-center"
+                id=":r1:-form-item"
+              >
+                <div
+                  class="flex-1"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-lastName"
+                id=":r1:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <div
+                aria-describedby=":r2:-form-item-description"
+                aria-invalid="false"
+                class="relative flex items-center"
+                id=":r2:-form-item"
+              >
+                <div
+                  class="flex-1"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-phoneNumber"
+                id=":r2:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="max-lg:space-y-2 space-y-4"
+        >
+          <div
+            class="space-y-2"
+          >
+            <div
+              class="flex items-center gap-3"
+            >
+              <h4
+                class="heading-4"
+              >
+                Delivery address
+              </h4>
+            </div>
+          </div>
+          <div
+            class="grid max-sm:grid-cols-1 max-2xl:grid-cols-2 grid-cols-4 max-sm:gap-x-2 max-xl:gap-x-6 gap-x-8 gap-y-1"
+          >
+            <div
+              class="space-y-2"
+            >
+              <div
+                class="flex w-full flex-col rounded-md bg-popover text-popover-foreground overflow-visible h-fit"
+                cmdk-root=""
+                tabindex="-1"
+              >
+                <label
+                  cmdk-label=""
+                  for=":r7:"
+                  id=":r6:"
+                  style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+                />
+                <input
+                  aria-autocomplete="list"
+                  aria-controls=":r5:"
+                  aria-describedby=":r3:-form-item-description"
+                  aria-expanded="true"
+                  aria-invalid="false"
+                  aria-labelledby=":r6:"
+                  autocomplete="off"
+                  autocorrect="off"
+                  class="flex h-10 w-full border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 rounded-full xl:p-5 xl:text-base"
+                  cmdk-input=""
+                  data-testid="street"
+                  id="street"
+                  name="street"
+                  placeholder="Street"
+                  role="combobox"
+                  spellcheck="false"
+                  type="text"
+                  value="123 Main St"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-street"
+                id=":r3:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <div
+                aria-describedby=":r8:-form-item-description"
+                aria-invalid="false"
+                class="relative flex items-center"
+                id=":r8:-form-item"
+              >
+                <div
+                  class="flex-1"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-city"
+                id=":r8:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <button
+                aria-autocomplete="none"
+                aria-controls="radix-:ra:"
+                aria-describedby=":r9:-form-item-description"
+                aria-expanded="false"
+                aria-invalid="false"
+                class="flex h-10 w-full items-center justify-between border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 rounded-full xl:p-5 xl:text-base"
+                data-state="closed"
+                data-testid="state"
+                dir="ltr"
+                id=":r9:-form-item"
+                role="combobox"
+                type="button"
+              >
+                <span
+                  style="pointer-events: none;"
+                >
+                  NSW
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+              <select
+                aria-hidden="true"
+                name="state"
+                style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+                tabindex="-1"
+              >
+                <option
+                  value="ACT"
+                >
+                  ACT
+                </option>
+                <option
+                  selected=""
+                  value="NSW"
+                >
+                  NSW
+                </option>
+                <option
+                  value="NT"
+                >
+                  NT
+                </option>
+                <option
+                  value="QLD"
+                >
+                  QLD
+                </option>
+                <option
+                  value="SA"
+                >
+                  SA
+                </option>
+                <option
+                  value="TAS"
+                >
+                  TAS
+                </option>
+                <option
+                  value="VIC"
+                >
+                  VIC
+                </option>
+                <option
+                  value="WA"
+                >
+                  WA
+                </option>
+              </select>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-state"
+                id=":r9:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <div
+                aria-describedby=":rb:-form-item-description"
+                aria-invalid="false"
+                class="relative flex items-center"
+                id=":rb:-form-item"
+              >
+                <div
+                  class="flex-1"
+                />
+              </div>
+              <p
+                class="font-medium text-destructive text-xs pl-1"
+                data-testid="form-message-postcode"
+                id=":rb:-form-item-message"
+              >
+                <span
+                  class="inline-block h-3"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>,
+  "container": <div>
+    <form
+      action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+      class="max-lg:space-y-2 space-y-4"
+    >
+      <div
+        class="max-lg:space-y-2 space-y-4"
+      >
+        <h4
+          class="heading-4"
+        >
+          Basic information
+        </h4>
+        <div
+          class="grid max-sm:grid-cols-1 max-2xl:grid-cols-2 grid-cols-4 max-sm:gap-x-2 max-xl:gap-x-6 gap-x-8 gap-y-1"
+        >
+          <div
+            class="space-y-2"
+          >
+            <div
+              aria-describedby=":r0:-form-item-description"
+              aria-invalid="false"
+              class="relative flex items-center"
+              id=":r0:-form-item"
+            >
+              <div
+                class="flex-1"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-firstName"
+              id=":r0:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <div
+              aria-describedby=":r1:-form-item-description"
+              aria-invalid="false"
+              class="relative flex items-center"
+              id=":r1:-form-item"
+            >
+              <div
+                class="flex-1"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-lastName"
+              id=":r1:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <div
+              aria-describedby=":r2:-form-item-description"
+              aria-invalid="false"
+              class="relative flex items-center"
+              id=":r2:-form-item"
+            >
+              <div
+                class="flex-1"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-phoneNumber"
+              id=":r2:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-lg:space-y-2 space-y-4"
+      >
+        <div
+          class="space-y-2"
+        >
+          <div
+            class="flex items-center gap-3"
+          >
+            <h4
+              class="heading-4"
+            >
+              Delivery address
+            </h4>
+          </div>
+        </div>
+        <div
+          class="grid max-sm:grid-cols-1 max-2xl:grid-cols-2 grid-cols-4 max-sm:gap-x-2 max-xl:gap-x-6 gap-x-8 gap-y-1"
+        >
+          <div
+            class="space-y-2"
+          >
+            <div
+              class="flex w-full flex-col rounded-md bg-popover text-popover-foreground overflow-visible h-fit"
+              cmdk-root=""
+              tabindex="-1"
+            >
+              <label
+                cmdk-label=""
+                for=":r7:"
+                id=":r6:"
+                style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
+              />
+              <input
+                aria-autocomplete="list"
+                aria-controls=":r5:"
+                aria-describedby=":r3:-form-item-description"
+                aria-expanded="true"
+                aria-invalid="false"
+                aria-labelledby=":r6:"
+                autocomplete="off"
+                autocorrect="off"
+                class="flex h-10 w-full border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 rounded-full xl:p-5 xl:text-base"
+                cmdk-input=""
+                data-testid="street"
+                id="street"
+                name="street"
+                placeholder="Street"
+                role="combobox"
+                spellcheck="false"
+                type="text"
+                value="123 Main St"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-street"
+              id=":r3:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <div
+              aria-describedby=":r8:-form-item-description"
+              aria-invalid="false"
+              class="relative flex items-center"
+              id=":r8:-form-item"
+            >
+              <div
+                class="flex-1"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-city"
+              id=":r8:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <button
+              aria-autocomplete="none"
+              aria-controls="radix-:ra:"
+              aria-describedby=":r9:-form-item-description"
+              aria-expanded="false"
+              aria-invalid="false"
+              class="flex h-10 w-full items-center justify-between border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 rounded-full xl:p-5 xl:text-base"
+              data-state="closed"
+              data-testid="state"
+              dir="ltr"
+              id=":r9:-form-item"
+              role="combobox"
+              type="button"
+            >
+              <span
+                style="pointer-events: none;"
+              >
+                NSW
+              </span>
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m6 9 6 6 6-6"
+                />
+              </svg>
+            </button>
+            <select
+              aria-hidden="true"
+              name="state"
+              style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+              tabindex="-1"
+            >
+              <option
+                value="ACT"
+              >
+                ACT
+              </option>
+              <option
+                selected=""
+                value="NSW"
+              >
+                NSW
+              </option>
+              <option
+                value="NT"
+              >
+                NT
+              </option>
+              <option
+                value="QLD"
+              >
+                QLD
+              </option>
+              <option
+                value="SA"
+              >
+                SA
+              </option>
+              <option
+                value="TAS"
+              >
+                TAS
+              </option>
+              <option
+                value="VIC"
+              >
+                VIC
+              </option>
+              <option
+                value="WA"
+              >
+                WA
+              </option>
+            </select>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-state"
+              id=":r9:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+          <div
+            class="space-y-2"
+          >
+            <div
+              aria-describedby=":rb:-form-item-description"
+              aria-invalid="false"
+              class="relative flex items-center"
+              id=":rb:-form-item"
+            >
+              <div
+                class="flex-1"
+              />
+            </div>
+            <p
+              class="font-medium text-destructive text-xs pl-1"
+              data-testid="form-message-postcode"
+              id=":rb:-form-item-message"
+            >
+              <span
+                class="inline-block h-3"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

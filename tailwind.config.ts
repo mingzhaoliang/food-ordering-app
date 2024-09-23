@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from "tailwindcss/colors";
 
 const sizing = {
   88: "22rem",
@@ -63,6 +64,8 @@ const config: Config = {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+        fade: colors.stone[400],
+        active: colors.emerald[400],
       },
       width: {
         ...sizing,
@@ -91,15 +94,21 @@ const config: Config = {
           "thumbnail tags tags",
           "thumbnail button button",
         ],
+        container: ["title", "description", "content", "button"],
+        "container-lg": ["title content", "description content", "button content"],
+        "container-lg-reverse": ["content title", "content description", "content button"],
       },
       gridTemplateColumns: {
         "card-vertical": "auto min-content min-content",
         "card-horizontal": "auto 1fr auto",
+        container: "repeat(1, minmax(0, 1fr))",
+        "container-lg": "repeat(2, minmax(0, 1fr))",
       },
       gridTemplateRows: {
         card: "repeat(4, auto)",
         "card-vertical": "minmax(0, 4fr) min-content",
         "card-horizontal": "2fr 2fr 1fr 1fr",
+        "container-lg": "auto auto 1fr",
       },
     },
   },

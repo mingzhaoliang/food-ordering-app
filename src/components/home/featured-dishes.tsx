@@ -1,8 +1,6 @@
-import DishCard from "@/components/ui/dish-card";
 import ScrollContainer from "@/components/ui/scroll-container";
-import { DishDTO, getDishes } from "@/services/mongoose/store/dish.dal";
-import { Plus } from "lucide-react";
-import { Button } from "../ui/shadcn/button";
+import { getDishes } from "@/services/mongoose/store/dish.dal";
+import DishItem from "../menu/dish-item";
 
 const FeaturedDishes = async () => {
   const { dishes: featuredDishes } = await getDishes({ featured: true, limit: 0 });
@@ -22,27 +20,5 @@ const FeaturedDishes = async () => {
     </ScrollContainer>
   );
 };
-
-const DishItem = ({
-  item,
-  variant,
-  className,
-}: {
-  item: DishDTO;
-  variant: "default" | "vertical";
-  className: string;
-}) => (
-  <DishCard
-    {...item}
-    iconUrls={item.specialDiets.map(({ imageUrl }) => imageUrl)}
-    variant={variant}
-    className={className}
-    button={
-      <Button size="icon">
-        <Plus className="size-icon-1" />
-      </Button>
-    }
-  />
-);
 
 export default FeaturedDishes;

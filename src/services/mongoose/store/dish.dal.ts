@@ -89,10 +89,10 @@ const getDishes = unstable_cache(
 );
 
 const getDish = unstable_cache(
-  async ({ id }: { id: string }): Promise<DishDTO> => {
+  async ({ id, slug }: { id?: string; slug?: string }): Promise<DishDTO> => {
     try {
       await dbConnect();
-      const dish = await Dish.findById(id).exec();
+      const dish = await Dish.findOne({ $or: [{ _id: id }, { slug }] }).exec();
 
       if (!dish) {
         throw new Error("Dish not found.");

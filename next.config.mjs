@@ -1,3 +1,5 @@
+import path from "path";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
@@ -5,6 +7,14 @@ const nextConfig = {
       bodySizeLimit: "3mb",
     },
     ppr: "incremental",
+  },
+  webpack(config, { dir }) {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "@": path.resolve(dir, "src/"),
+    };
+
+    return config;
   },
   serverExternalPackages: ["@node-rs/argon2", "mongoose"],
   images: {

@@ -1,34 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/create-next-app).
+# Restaurant Food Ordering Web App
 
-## Getting Started
+This is a fully responsive food ordering platform developed for a restaurant. Users can browse the menu, customize their orders, and make payments online. It includes features like real-time order tracking, account management, and an admin panel for managing orders.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Browse restaurant menu with categories
+- Add dishes to cart and customize orders
+- User authentication and profile management
+- Order tracking and notifications
+- Payment gateway integration for secure online payments
+- Admin panel for managing orders and updating menu
+- Responsive design for mobile and desktop devices
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Check out the live demo: [Live Demo](https://food-ordering-app-demo-tim.vercel.app/)
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: Next.js
+- **Styling**: Tailwind CSS, Shadcn
+- **Database**: MongoDB with Mongoose ORM
+- **Authentication**: Lucia
+- **Payment Gateway**: Stripe API
+- **Cloud Storage**: Cloudinary (for storing images)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/mingzhaoliang/food-ordering-app.git
+   cd food-ordering-app
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Install dependencies:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+
+3. Set up environment variables in a .env file (example below):
+
+   ```bash
+   NODE_ENV=development
+   BASE_URL=http://localhost:3000
+   NEXT_PUBLIC_BASE_URL=http://localhost:3000
+
+   # mongodb
+
+   DB_NAME=restaurant
+   MONGODB_URI=<your-mongodb-uri>
+
+   # cloudinary
+   NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=<your-cloudinary-cloud-name>
+   NEXT_PUBLIC_UPLOAD_PRESET=<your-cloudinary-upload-preset>
+   CLOUDINARY_API_KEY=<your-cloudinary-api-key>
+   CLOUDINARY_API_SECRET=<your-cloudinary-api-secret>
+
+   # google
+   OAUTH_GOOGLE_CLIENT_ID=<your-google-oauth-client-id>
+   OAUTH_GOOGLE_CLIENT_SECRET=<your-google-oauth-client-secret>
+
+   # location iq
+   LOCATIONIQ_ACCESS_TOKEN=<your-locationiq-access-token>
+
+   # maptiler
+   NEXT_PUBLIC_MAPTILER_API_KEY=<your-maptiler-api-key>
+
+   # stripe
+   STRIPE_API_KEY=<your-stripe-api-key>
+   STRIPE_WEBHOOK_SECRET=<your-stripe-webhook-secret>
+   ```
+
+4. Run the app in development mode:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open http://localhost:3000 to view it in the browser.
+
+## Usage
+
+1. Browse the menu by categories (e.g., Antipasti, Primi, Secondi, Dolci).
+2. Add items to your cart and customize your order.
+3. Place your order without signing in.
+4. Create an account or sign in to track your order in real time from your account dashboard.
+5. Admins can sign in to view and update orders and manage the menu and restaurant information.

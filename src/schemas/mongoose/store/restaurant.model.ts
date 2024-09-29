@@ -15,19 +15,19 @@ interface RestaurantDoc {
   deliveryFee: number;
   freeDeliveryThreshold: number;
   estimatedDeliveryTime: number;
+  userId?: string;
+  expiresAt?: Date;
   createdAt: Date;
   updatedAt: Date;
 }
 
 interface CourseDoc {
-  _id: string;
   name: string;
   slug: string;
   image: ImageDoc;
 }
 
 interface SpecialDietDoc {
-  _id: string;
   name: string;
   slug: string;
   image: ImageDoc;
@@ -74,6 +74,8 @@ const restaurantSchema = new Schema<RestaurantDoc>(
     deliveryFee: { type: Number, required: true },
     freeDeliveryThreshold: { type: Number, required: true },
     estimatedDeliveryTime: { type: Number, required: true },
+    userId: { type: String },
+    expiresAt: { type: Date, default: undefined, expires: 0 },
   },
   { timestamps: true }
 );

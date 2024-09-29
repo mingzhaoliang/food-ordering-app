@@ -2,7 +2,7 @@ import "server-only";
 
 import { hashPassword } from "@/lib/utils/hashPassword";
 import { Account } from "@/schemas/mongoose/auth/account.model";
-import { User, UserDoc } from "@/schemas/mongoose/auth/user.model";
+import { User, UserDoc, UserRole } from "@/schemas/mongoose/auth/user.model";
 import { Profile, ProfileDoc } from "@/schemas/mongoose/my/profile.model";
 import dbConnect from "@/services/mongoose/mongoose";
 import { generateIdFromEntropySize } from "lucia";
@@ -16,6 +16,8 @@ interface CreateUserArgs {
     email: string;
     password?: string;
     emailVerified?: boolean;
+    role?: UserRole;
+    expiresAt?: Date;
   };
   account?: {
     providerId: string;
@@ -48,6 +50,8 @@ export const createUser = async ({ user, account }: CreateUserArgs): Promise<str
         email: user.email,
         passwordHash,
         emailVerified: user.emailVerified || false,
+        role: user.role || "user",
+        expiresAt: user.expiresAt,
       };
 
       const profileData: Partial<ProfileDoc> = {

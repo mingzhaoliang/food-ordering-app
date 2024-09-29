@@ -1,10 +1,9 @@
 import MainHeader from "@/components/header/main-header";
 import { CartProvider } from "@/lib/store/context/cart.context";
-import { getRestaurant } from "@/services/mongoose/store/restaurant.dal";
 
 export const experimental_ppr = true;
 
-export default async function MainLayout({
+export default function MainLayout({
   children,
   auth,
   orderFlow,
@@ -13,11 +12,9 @@ export default async function MainLayout({
   auth: React.ReactNode;
   orderFlow: React.ReactNode;
 }) {
-  const { name } = await getRestaurant();
-
   return (
     <CartProvider>
-      <MainHeader name={name} />
+      <MainHeader />
       {children}
       {auth}
       {orderFlow}

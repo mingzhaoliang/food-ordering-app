@@ -11,15 +11,11 @@ import Me from "./me";
 import ShoppingBag from "./shopping-bag";
 import StoreEntry from "./store-entry";
 
-interface MainHeaderProps {
-  name: string;
-}
-
-export default function MainHeader({ name }: MainHeaderProps) {
+export default function MainHeader() {
   return (
     <Header>
       <div className="flex-center lg:gap-10 2xl:gap-12">
-        <Mark name={name} />
+        <Mark />
         {PAGES.map((link) => (
           <Link key={link.href} href={link.href} className={cn("body-2 text-nowrap text-ellipsis", "max-lg:hidden")}>
             {link.text}

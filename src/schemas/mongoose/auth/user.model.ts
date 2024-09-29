@@ -9,6 +9,7 @@ interface UserDoc {
   passwordHash?: string;
   role?: UserRole;
   emailVerified?: boolean;
+  expiresAt?: Date;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -20,6 +21,7 @@ const userSchema = new Schema<UserDoc>(
     passwordHash: String,
     role: { type: String, enum: userRoleEnum, default: "user" },
     emailVerified: { type: Boolean, default: false },
+    expiresAt: { type: Date, default: undefined, expires: 0 },
   },
   { _id: false, timestamps: true }
 );

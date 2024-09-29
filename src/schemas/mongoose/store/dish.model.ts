@@ -30,6 +30,8 @@ interface DishDoc {
   image: ImageDoc;
   featured: boolean;
   popular: boolean;
+  userId?: string;
+  expiresAt?: Date;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -53,6 +55,8 @@ const dishSchema = new Schema<DishDoc>(
     image: { type: imageSchema, required: true },
     featured: { type: Boolean, required: true, default: false },
     popular: { type: Boolean, required: true, default: false },
+    userId: { type: String },
+    expiresAt: { type: Date, default: undefined, expires: 0 },
   },
   { timestamps: true }
 );

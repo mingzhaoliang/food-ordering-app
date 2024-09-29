@@ -6,7 +6,7 @@ import { Button } from "../ui/shadcn/button";
 export default async function StoreEntry() {
   const { user } = await validateRequest();
 
-  if (user && ["admin", "superadmin"].includes(user.role)) {
+  if (user && ["admin", "superadmin", "demo"].includes(user.role)) {
     return (
       <Button variant="plain" size="icon" asChild>
         <Link href="/store">

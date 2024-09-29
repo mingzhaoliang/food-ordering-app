@@ -11,7 +11,7 @@ const updateMenuItemAction = async (id: string | undefined, prevState: ActionSta
 
   if (!user) redirect("/auth");
 
-  if (!["admin", "superadmin"].includes(user.role)) return { message: "Unauthorised!" };
+  if (!["admin", "superadmin", "demo"].includes(user.role)) return { message: "Unauthorised!" };
 
   const data = Object.fromEntries(formData);
   data.customisation = JSON.parse(data.customisation as string);
@@ -39,7 +39,7 @@ const deleteMenuItemAction = async (id: string | undefined, successUrl: string) 
 
   if (!user) redirect("/auth");
 
-  if (!["admin", "superadmin"].includes(user.role)) return { message: "Unauthorised!" };
+  if (!["admin", "superadmin", "demo"].includes(user.role)) return { message: "Unauthorised!" };
 
   if (id === undefined) {
     return null;

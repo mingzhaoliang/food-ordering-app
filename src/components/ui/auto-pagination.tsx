@@ -21,6 +21,8 @@ export default function AutoPagination({
   maxPage,
   hideNavigationText,
 }: AutoPaginationProps) {
+  if (maxPage === 0) return null;
+
   return (
     <Pagination>
       <PaginationContent>

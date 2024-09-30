@@ -51,10 +51,10 @@ export default async function Page({ searchParams }: { searchParams: OrderSearch
         {orders.map((order, index) => (
           <div key={order._id}>
             {!!index && <Separator className="my-2" />}
-
             <OrderOverview order={order} searchParams={searchParams} />
           </div>
         ))}
+        {orders.length === 0 && <p className="text-center">No order is placed yet.</p>}
       </div>
       <AutoPagination searchParams={searchParams} currentPage={currentPage} maxPage={totalPages} hideNavigationText />
     </div>

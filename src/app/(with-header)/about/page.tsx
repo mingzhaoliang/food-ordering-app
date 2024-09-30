@@ -7,17 +7,18 @@ import { getRestaurant } from "@/services/mongoose/store/restaurant.dal";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 
-export default async function AboutPage() {
-  const { name, city } = await getRestaurant();
-
+export default function AboutPage() {
   return (
     <div className="relative space-y-8 pb-20">
       <div className="relative w-screen min-h-[calc(100vh*2/3)] pt-24 px-10 flex flex-col bg-cover bg-center">
         <Background src={restaurantBackground} />
         <div className="absolute inset-0 bg-gradient-to-t from-white via-white to-white/20 via-5% to-30%" />
         <div className="z-10 mt-12 sm:w-2/3 2xl:w-2/3 space-y-2 2xl:space-y-6 text-white">
-          <p className="uppercase body-1">About {name}</p>
+          <Suspense fallback={null}>
+            <Title />
+          </Suspense>
           <h1
             className={cn(
               "text-4xl sm:text-5xl lg:text-6xl",
@@ -45,21 +46,9 @@ export default async function AboutPage() {
             />
           </div>
           <div className="body-2 leading-relaxed space-y-4 mr-16">
-            <p>
-              What started as a small workshop has blossomed into {name}, a cherished spot in {city}. Founded by three
-              passionate friends, our vision was to create a welcoming space where everyone could savour delightful food
-              and drinks in a relaxed environment.
-            </p>
-            <p>
-              As we&apos;ve grown, so has our commitment to excellence. With the recent leadership of Somebody, our
-              former head chef, we’ve revitalised our menu and enhanced our focus on locally sourced ingredients and
-              innovative cocktails.
-            </p>
-            <p>
-              While the road has had its ups and downs, the support from our local community has been invaluable.
-              We&apos;re eager to reopen our doors and invite you back to experience the warmth and vibrancy that {name}{" "}
-              embodies. Join us for memorable moments and a taste of what makes us special!
-            </p>
+            <Suspense fallback={<StoryDetails />}>
+              <StorySection />
+            </Suspense>
             <Button variant="default-active" className="w-fit h-fit" asChild>
               <Link href="/menu">
                 Menu
@@ -72,3 +61,32 @@ export default async function AboutPage() {
     </div>
   );
 }
+
+const Title = async () => {
+  const { name } = await getRestaurant();
+  return <p className="uppercase body-1">About {name}</p>;
+};
+
+const StorySection = async () => {
+  const { name, city } = await getRestaurant();
+  return <StoryDetails name={name} city={city} />;
+};
+
+const StoryDetails = ({ name = "Restaurant Name", city = "City" }: { name?: string; city?: string }) => (
+  <>
+    <p>
+      What started as a small workshop has blossomed into {name}, a cherished spot in {city}. Founded by three
+      passionate friends, our vision was to create a welcoming space where everyone could savour delightful food and
+      drinks in a relaxed environment.
+    </p>
+    <p>
+      As we&apos;ve grown, so has our commitment to excellence. With the recent leadership of Somebody, our former head
+      chef, we’ve revitalised our menu and enhanced our focus on locally sourced ingredients and innovative cocktails.
+    </p>
+    <p>
+      While the road has had its ups and downs, the support from our local community has been invaluable. We&apos;re
+      eager to reopen our doors and invite you back to experience the warmth and vibrancy that {name} embodies. Join us
+      for memorable moments and a taste of what makes us special!
+    </p>
+  </>
+);

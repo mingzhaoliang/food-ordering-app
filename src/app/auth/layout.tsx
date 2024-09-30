@@ -4,7 +4,7 @@ import { getRestaurant } from "@/services/mongoose/store/restaurant.dal";
 import Link from "next/link";
 
 export default async function Layout({ children }: { children: React.ReactNode }) {
-  const { name } = await getRestaurant();
+  const { name } = await getRestaurant(true);
 
   return (
     <div className="relative w-screen min-h-screen bg-cover bg-center flex max-lg:flex-center">

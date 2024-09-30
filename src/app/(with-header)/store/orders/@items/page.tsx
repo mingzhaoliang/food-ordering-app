@@ -19,7 +19,7 @@ export default async function Page({ searchParams }: { searchParams: OrderSearch
   const { user } = await validateRequest();
 
   if (!user) redirect("/auth");
-  if (!["admin", "superadmin"].includes(user.role)) redirect("/");
+  if (!["admin", "superadmin", "demo"].includes(user.role)) redirect("/");
 
   const { status, page, date: timestamp } = searchParams;
 

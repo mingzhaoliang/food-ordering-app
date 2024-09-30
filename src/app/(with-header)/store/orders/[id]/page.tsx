@@ -11,7 +11,7 @@ import { redirect } from "next/navigation";
 
 export default async function Page({ params }: { params: { id: string } }) {
   const { user } = await validateRequest();
-  if (!user || !["admin", "superadmin"].includes(user.role)) redirect("/auth");
+  if (!user || !["admin", "superadmin", "demo"].includes(user.role)) redirect("/");
 
   const { id } = params;
   const order = await getOrder(id);

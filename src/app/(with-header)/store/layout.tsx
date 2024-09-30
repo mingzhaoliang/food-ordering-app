@@ -7,7 +7,7 @@ import { redirect } from "next/navigation";
 export default async function Layout({ children }: { children: React.ReactNode }) {
   const { user } = await validateRequest();
 
-  if (!user || !["admin", "superadmin"].includes(user.role)) {
+  if (!user || !["admin", "superadmin", "demo"].includes(user.role)) {
     redirect("/");
   }
 

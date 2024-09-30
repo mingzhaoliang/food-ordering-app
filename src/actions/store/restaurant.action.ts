@@ -12,7 +12,7 @@ const updateRestaurantAction = async (prevState: ActionState<RestaurantSchema>, 
   const { user } = await validateRequest();
 
   if (!user) redirect("/auth");
-  if (!["admin", "superadmin"].includes(user.role)) return { message: "Unauthorised!" };
+  if (!["admin", "superadmin", "demo"].includes(user.role)) return { message: "Unauthorised!" };
 
   const data = Object.fromEntries(formData) as Record<string, string | File | object>;
 

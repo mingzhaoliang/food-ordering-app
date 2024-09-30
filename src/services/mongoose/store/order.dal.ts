@@ -145,7 +145,7 @@ const getStoreOrders = async ({
 }: GetStoreOrdersArg): Promise<GetOrdersResponse> => {
   try {
     const { user } = await validateRequest();
-    if (!user || !["admin", "superadmin"].includes(user.role)) throw new Error("Unauthorised!");
+    if (!user || !["admin", "superadmin", "demo"].includes(user.role)) throw new Error("Unauthorised!");
 
     await dbConnect();
 
@@ -214,7 +214,7 @@ const getOrder = async (orderId?: string, trackingToken?: string): Promise<Order
 const updateDeliveryStatus = async (orderId: string, deliveryStatus: string) => {
   try {
     const { user } = await validateRequest();
-    if (!user || !["admin", "superadmin"].includes(user.role)) throw new Error("Unauthorised");
+    if (!user || !["admin", "superadmin", "demo"].includes(user.role)) throw new Error("Unauthorised!");
 
     await dbConnect();
 

@@ -3,6 +3,7 @@ import AuthFlow from "../auth-flow";
 
 vi.mock("@/actions/auth/signIn");
 vi.mock("@/actions/auth/signUp");
+vi.mock("@/actions/auth/createDemoUser");
 
 vi.mock("next/headers", () => ({
   headers: vi.fn(() => ({

@@ -13,7 +13,7 @@ export default async function Page({ searchParams }: { searchParams: { id?: stri
   if (!orderId) return null;
 
   const { user } = await validateRequest();
-  if (!user || !["admin", "superadmin"].includes(user.role)) redirect("/");
+  if (!user || !["admin", "superadmin", "demo"].includes(user.role)) redirect("/");
 
   const order = await getOrder(orderId);
   const badgeVariant = getOrderStatusBadgeVariant(order.orderStatus);

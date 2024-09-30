@@ -27,7 +27,7 @@ const updateDeliveryStatusAction = async (orderId: string, status: DeliveryStatu
     const { user } = await validateRequest();
 
     if (!user) redirect("/auth");
-    if (!["admin", "superadmin"].includes(user.role)) return { message: "Unauthorised!" };
+    if (!["admin", "superadmin", "demo"].includes(user.role)) return { message: "Unauthorised!" };
 
     const validatedData = schema.safeParse({ status });
     if (!validatedData.success) throw new Error("Invalid data");

@@ -5,6 +5,7 @@ import { headers } from "next/headers";
 import Image from "next/image";
 import Link from "next/link";
 import { Skeleton } from "../ui/shadcn/skeleton";
+import CreateDemoUserButton from "./create-demo-user-button";
 
 const Fallback = () => (
   <div className="space-y-6">
@@ -39,6 +40,7 @@ export default function AuthFlow({ searchParams }: { searchParams: { [key: strin
             Continue with Google
           </a>
         </Button>
+        <CreateDemoUserButton callbackUrl={callbackUrl} />
       </div>
 
       <div className="pt-4 text-sm text-stone-500">

@@ -2,11 +2,10 @@ import DishList from "@/components/menu/dish-list";
 import { getDishes } from "@/services/mongoose/store/dish.dal";
 import { getCourses } from "@/services/mongoose/store/restaurant.dal";
 
-export const dynamicParams = false;
 export const experimental_ppr = false;
 
 export async function generateStaticParams() {
-  const courses = await getCourses();
+  const courses = await getCourses(true);
 
   return courses.map((course) => ({ course: course.slug }));
 }

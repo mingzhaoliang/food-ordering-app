@@ -1,5 +1,6 @@
 import "server-only";
 
+import { validateRequest } from "@/lib/lucia/auth";
 import { cloudinaryIdentifier } from "@/lib/utils/cloudinary";
 import { Dish } from "@/schemas/mongoose/store/dish.model";
 import {
@@ -11,7 +12,7 @@ import {
 } from "@/schemas/mongoose/store/restaurant.model";
 import { CategorySchema, RestaurantSchema } from "@/schemas/zod/store/restaurant.schema";
 import { deleteImage, restoreImages, uploadImage } from "@/services/api/cloudinary";
-import { startSession } from "mongoose";
+import { startSession, Types } from "mongoose";
 import { revalidateTag, unstable_cache } from "next/cache";
 import slugify from "slugify";
 import { validateRole } from "../guard";
@@ -69,74 +70,93 @@ const createSpecialDietDTO = (specialDiet: TRestaurant["specialDiets"][number]):
   return JSON.parse(JSON.stringify(specialDietDTO));
 };
 
-const getCourses = unstable_cache(
-  async () => {
-    try {
-      await dbConnect();
-      let restaurant = await Restaurant.findOne({}, { courses: 1 }).exec();
+const getCourses = async (skip?: boolean) => {
+  let userId = undefined;
 
-      if (!restaurant) {
-        restaurant = await initliaseRestaurant();
+  if (!skip) {
+    const { user } = await validateRequest();
+    userId = user?.role === "demo" ? user.id : undefined;
+  }
+
+  return unstable_cache(
+    async () => {
+      try {
+        await dbConnect();
+        let restaurant = await Restaurant.findOne({ userId }, { courses: 1 }).exec();
+
+        if (!restaurant) {
+          restaurant = await initliaseRestaurant();
+        }
+
+        const { courses } = restaurant;
+
+        return courses.map(createCourseDTO);
+      } catch (error) {
+        console.error(error);
+        throw new Error("Failed to fetch restaurant.");
       }
+    },
+    ["courses", userId || ""],
+    { tags: ["restaurant", "courses"] }
+  )();
+};
 
-      const { courses } = restaurant;
+const getSpecialDiets = async () => {
+  const { user } = await validateRequest();
+  const userId = user?.role === "demo" ? user.id : undefined;
 
-      return courses.map(createCourseDTO);
-    } catch (error) {
-      console.error(error);
-      throw new Error("Failed to fetch restaurant.");
-    }
-  },
-  ["courses"],
-  { tags: ["restaurant", "courses"] }
-);
+  return unstable_cache(
+    async () => {
+      try {
+        await dbConnect();
+        let restaurant = await Restaurant.findOne({ userId }, { specialDiets: 1 }).exec();
 
-const getSpecialDiets = unstable_cache(
-  async () => {
-    try {
-      await dbConnect();
-      let restaurant = await Restaurant.findOne({}, { specialDiets: 1 }).exec();
+        if (!restaurant) {
+          restaurant = await initliaseRestaurant();
+        }
 
-      if (!restaurant) {
-        restaurant = await initliaseRestaurant();
+        const { specialDiets } = restaurant;
+
+        return specialDiets.map(createSpecialDietDTO);
+      } catch (error) {
+        console.error(error);
+        throw new Error("Failed to fetch restaurant.");
       }
+    },
+    ["specialDiets", userId || ""],
+    { tags: ["restaurant", "specialDiets"] }
+  )();
+};
 
-      const { specialDiets } = restaurant;
+const getCoursesAndSpecialDiets = async () => {
+  const { user } = await validateRequest();
+  const userId = user?.role === "demo" ? user.id : undefined;
 
-      return specialDiets.map(createSpecialDietDTO);
-    } catch (error) {
-      console.error(error);
-      throw new Error("Failed to fetch restaurant.");
-    }
-  },
-  ["specialDiets"],
-  { tags: ["restaurant", "specialDiets"] }
-);
+  return unstable_cache(
+    async () => {
+      try {
+        await dbConnect();
+        let restaurant = await Restaurant.findOne({ userId }, { courses: 1, specialDiets: 1 }).exec();
 
-const getCoursesAndSpecialDiets = unstable_cache(
-  async () => {
-    try {
-      await dbConnect();
-      let restaurant = await Restaurant.findOne({}, { courses: 1, specialDiets: 1 }).exec();
+        if (!restaurant) {
+          restaurant = await initliaseRestaurant();
+        }
 
-      if (!restaurant) {
-        restaurant = await initliaseRestaurant();
+        const { courses, specialDiets } = restaurant;
+
+        return {
+          courses: courses.map(createCourseDTO),
+          specialDiets: specialDiets.map(createSpecialDietDTO),
+        };
+      } catch (error) {
+        console.error(error);
+        throw new Error("Failed to fetch courses and special diets.");
       }
-
-      const { courses, specialDiets } = restaurant;
-
-      return {
-        courses: courses.map(createCourseDTO),
-        specialDiets: specialDiets.map(createSpecialDietDTO),
-      };
-    } catch (error) {
-      console.error(error);
-      throw new Error("Failed to fetch courses and special diets.");
-    }
-  },
-  ["courses", "specialDiets"],
-  { tags: ["restaurant", "courses", "specialDiets"] }
-);
+    },
+    ["courses", "specialDiets", userId || ""],
+    { tags: ["restaurant", "courses", "specialDiets"] }
+  )();
+};
 
 interface RestaurantDTO extends RestaurantDoc {}
 
@@ -146,25 +166,68 @@ const createRestaurantDTO = (restaurant: TRestaurant) => {
   return JSON.parse(JSON.stringify(restaurantDTO));
 };
 
-const getRestaurant = unstable_cache(
-  async (): Promise<RestaurantDTO> => {
-    try {
-      await dbConnect();
-      let restaurant = await Restaurant.findOne().exec();
+const getRestaurant = async (skip?: boolean) => {
+  let userId = undefined;
 
-      if (!restaurant) {
-        restaurant = await initliaseRestaurant();
+  if (!skip) {
+    const { user } = await validateRequest();
+    userId = user?.role === "demo" ? user.id : undefined;
+  }
+
+  return unstable_cache(
+    async (): Promise<RestaurantDTO> => {
+      try {
+        await dbConnect();
+        let restaurant = await Restaurant.findOne({ userId }).exec();
+
+        if (!restaurant) {
+          restaurant = await initliaseRestaurant();
+        }
+
+        return createRestaurantDTO(restaurant);
+      } catch (error) {
+        console.error(error);
+        throw new Error("Failed to fetch restaurant.");
       }
+    },
+    ["restaurant", userId || ""],
+    { tags: ["restaurant"] }
+  )();
+};
 
-      return createRestaurantDTO(restaurant);
-    } catch (error) {
-      console.error(error);
-      throw new Error("Failed to fetch restaurant.");
-    }
-  },
-  ["restaurant"],
-  { tags: ["restaurant"] }
-);
+const createDemoRestaurant = async (userId: string): Promise<void> => {
+  try {
+    await dbConnect();
+
+    const restaurant = await Restaurant.findOne({ userId: undefined }).exec();
+    if (!restaurant) throw new Error("Restaurant seed not found.");
+
+    const restaurantObj = restaurant.toObject();
+    const demoRestaurant = {
+      ...restaurantObj,
+      _id: new Types.ObjectId(),
+      userId,
+      expiresAt: new Date(Date.now() + 1000 * 60 * 60), // 1 hour
+      courses: await uploadImages(restaurantObj.courses, "/food-ordering-app/restaurant-demo/courses"),
+      specialDiets: await uploadImages(restaurantObj.specialDiets, "/food-ordering-app/restaurant-demo/specialDiets"),
+    };
+
+    await Restaurant.create(demoRestaurant);
+    revalidateTag("restaurant");
+  } catch (error) {
+    console.error(error);
+    throw new Error("Failed to create demo restaurant.");
+  }
+};
+
+const uploadImages = async (items: any[], folder: string) => {
+  return Promise.all(
+    items.map(async ({ name, slug, image }) => {
+      const uploadResult = await uploadImage(image.imageUrl, { folder });
+      return { name, slug, image: cloudinaryIdentifier(uploadResult) };
+    })
+  );
+};
 
 const updateRestaurant = async (data: RestaurantSchema): Promise<void> => {
   try {
@@ -173,9 +236,11 @@ const updateRestaurant = async (data: RestaurantSchema): Promise<void> => {
     session.startTransaction();
 
     try {
-      await validateRole(["admin", "superadmin"]);
+      const { user } = await validateRole(["admin", "superadmin", "demo"]);
+      const isDemo = user.role === "demo";
+      const userId = isDemo ? user.id : undefined;
 
-      const restaurant = await Restaurant.findOne().exec();
+      const restaurant = await Restaurant.findOne({ userId }).exec();
 
       if (!restaurant) {
         throw new Error("Restaurant not found.");
@@ -203,9 +268,12 @@ const updateRestaurant = async (data: RestaurantSchema): Promise<void> => {
       }
 
       // Upload new images and update the data
-      const updatedCourses = await manageCourseAndSpecialDiet("/food-ordering-app/restaurant/courses", data.courses);
+      const updatedCourses = await manageCourseAndSpecialDiet(
+        `/food-ordering-app/restaurant${isDemo ? "-demo" : ""}/courses`,
+        data.courses
+      );
       const updatedSpecialDiets = await manageCourseAndSpecialDiet(
-        "/food-ordering-app/restaurant/specialDiets",
+        `/food-ordering-app/restaurant${isDemo ? "-demo" : ""}/specialDiets`,
         data.specialDiets
       );
 
@@ -216,7 +284,7 @@ const updateRestaurant = async (data: RestaurantSchema): Promise<void> => {
       };
 
       // Update the restaurant with the new data
-      await Restaurant.updateOne({ name: restaurant.name }, dbReadyData).exec();
+      await Restaurant.updateOne({ userId, name: restaurant.name }, dbReadyData).exec();
 
       // Commit the transaction
       await session.commitTransaction();
@@ -288,6 +356,7 @@ const deleteRemovedItems = async (
 };
 
 export {
+  createDemoRestaurant,
   getCourses,
   getCoursesAndSpecialDiets,
   getRestaurant,
